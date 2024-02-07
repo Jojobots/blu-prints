@@ -33,13 +33,10 @@
   </script>
   <script>
     function redirectHearingAid() {
-      window.location.href = "hearingAid.html"; 
+      window.location.href = "/Projects/hearingAid.html"; 
     }
-    function redirectProject3() {
-      window.location.href = "project3.html"; 
-    }
-    function redirectProject4() {
-      window.location.href = "project4.html"; 
+    function redirectIDC() {
+      window.location.href = "/Projects/IDC.html"; 
     }
   </script>
 
@@ -71,7 +68,7 @@
       <li class="logo">
         <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
           class="brand-logo grey-blue-text">
-          <img src="/assets/img/Headshot.png" class="circle img-responsive profile-pic" alt="avatar">
+          <img src="/assets/img/About/Headshot.png" class="circle img-responsive profile-pic" alt="avatar">
         </a>
       </li>
       <li class="bold">
@@ -80,32 +77,10 @@
         <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
             class="mdi-av-my-library-books small"></i><span>Projects</span></a>
       </li>
-
       <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
       </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
       <li class="bold">
         <!-- 
         1. mdi-communication-contacts
@@ -114,19 +89,6 @@
         -->
         <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
             class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <a aria-label="Open Brandon's resume in a new tab" href="https://drive.google.com/file/d/1L_N2x8dBXTkCRHZ6mSzlPFWEghXRswUe/view?usp=sharing" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
       </li>
     </ul>
   </nav>
@@ -145,31 +107,16 @@
   <nav class="hide-on-large only">
     <ul id="slide-out" class="side-nav">
       <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
         <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
             class="mdi-av-my-library-books small"></i><span>Projects</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>About</span></a>
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
             class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Ryan's Resume in a new tab"
-          href="https://drive.google.com/file/d/1L_N2x8dBXTkCRHZ6mSzlPFWEghXRswUe/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
       </li>
     </ul>
   </nav>
@@ -186,7 +133,10 @@
               <h2>Hi, I'm <span class="teal">Brandon Lu.</span></h2>
               <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
               <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Self-driven engineer and programmer who enjoys solving complex, real-world biomedical problems.</h5>
+              <h5>Welcome to blu-prints, a place where I store all my engineering endeavors! I'm a hobbyist who loves to build things,
+                both practical and just for fun.
+                You'll find projects ranging from year-long passion projects to interdisciplinary class projects to day long
+                aesthetic dorm improvement projects.</h5>
             </div>
             <div class='buttons'>
               <a href="#projects" class="readme">Read More</a>
@@ -198,9 +148,9 @@
     </section>
 
 
-    <!-- Third Section: Projects -->
+    <!-- Second Section: Projects -->
     <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects (Click to learn more)</h3>
+      <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
         
         <div class="row">
@@ -224,36 +174,16 @@
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <a href="#" onclick="redirectProject3();">
+                <a href="#" onclick="redirectIDC();">
                   <img alt="music streaming app" src="/assets/img/robotprofilepic.jpeg" style="height: 100%; width: 100%" class="activator" />
                 </a>
               </div>
               <div class="card-content">
-                <a href="#" onclick="redirectProject3();" target="_blank" data-position="top" data-tooltip='Click for more info' class="card-title activator teal-text hoverline">Arduino Robot<i class="mdi-navigation-more-vert right"></i></a>
+                <a href="#" onclick="redirectIDC();" target="_blank" data-position="top" data-tooltip='Click for more info' class="card-title activator teal-text hoverline">Arduino Robot<i class="mdi-navigation-more-vert right"></i></a>
                 <p>Robot to follow shapes, identify colors, distinguish between metal and plastic, and communicate wirelessly</p>
               </div>
               <div class="card-action">
                 <a aria-label="Visit the GitHub repo for the project" href="https://github.com/dcunhrya/ECE-Robot" target="_blank" data-position="top" data-tooltip="View GitHub" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-                  <i class="fa fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Pulse Ox Project -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <a href="#" onclick="redirectProject4();">
-                  <img alt="music streaming app" src="/assets/img/pulseoxprofileopic.jpg" style="height: 100%; width: 100%" class="activator" />
-                </a>
-              </div>
-              <div class="card-content">
-                <a href="#" onclick="redirectProject4();" target="_blank" data-position="top" data-tooltip='Click for more info' class="card-title activator teal-text hoverline">Pulse Oximeter<i class="mdi-navigation-more-vert right"></i></a>
-                <p>Arduino based device measuring SpO2 and Heart Rate</p>
-              </div>
-              <div class="card-action">
-                <a aria-label="Visit the GitHub repo for the project" href="https://github.com/nolantuite/Pulse-Oximeter" target="_blank" data-position="top" data-tooltip="View GitHub" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
                   <i class="fa fa-github"></i>
                 </a>
               </div>
@@ -264,346 +194,50 @@
       </div>
     </section>
 
-     <!-- Fourth Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience (Click to Expand)</h3>
-      <div class="container">
 
-        <div class="card">
-          <div class="card-content-exp">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://sites.duke.edu/medesign/" target="_blank"><img alt="MEDesign logo"
-                    src="/assets/img/MEDesignLogo.jpg" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <div class="role brown-text text-darken-2">Co-President</div>
-                <p>
-                  <span class="card-title"><a href="https://sites.duke.edu/medesign/" target="_blank"
-                      class="teal-text hoverline">MEDesign</a></span>
-                </p>
-              </div>
-            </div>
-            <ul>
-              <li>
-              Manage $8000 budget to distribute among project teams, write grant and budget proposals, and present to Duke
-                  engineering alumni and medical device foundations for funding
-              </li>
-              <li>
-              Facilitate project teams by helping advise and leading electrical and software technical skills workshop
-              </li>
-              <li>
-                Founded <a href="#projects" target="_blank"
-                class="teal-text hoverline">wearable breathalyzer </a> project and lead weekly 
-                meetings of 15 engineers to integrate CAD, electrical, and software components
-              </li>
-              <li>
-                <b>Tools:</b> Micrcontrollers, PCB Design, Circuit Design, C, Python, OnShape, CAD
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>January 2022 - Present | Durham, NC</span>
-          </div>
-        </div>
-        
-        <div class="card">
-          <div class="card-content-exp">
-            <div class="row" style="cursor: pointer;"> 
-              <div class="col s12 m2">
-                  <a href="https://www.bostonscientific.com/en-US/medical-specialties/interventional-cardiology/coronary-interventions/how-to-ivus.html" 
-                  target="_blank">
-                      <img alt="Boston Scientific logo" src="/assets/img/bos_sci.png" class="responsive-img center-block" />
-                  </a>
-              </div>
-              <div class="col s12 m10">
-                <div class="role brown-text text-darken-2">R&D ML Intern</div>
-                  <p>
-                      <span class="card-title">
-                          <a href="https://www.bostonscientific.com/en-US/medical-specialties/interventional-cardiology/coronary-interventions/how-to-ivus.html" target="_blank"
-                          class="teal-text hoverline">Boston Scientific</a>
-                      </span>
-                  </p>
-              </div>
-            </div>
-            <ul>
-              12-week internship for Machine Learning and Computer Vision with Interventional Cardiology
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>May 2024 - August 2024 | Minneapolis, MN</span>
-          </div>
-        </div>
+        <!-- Second Section: About -->
+    <section id="about" class="section scrollspy">
+      <h3 class="page-title white-text teal">About</h3>
+      <div class="container flow-text">       
+        <p>
+          I am a Biomedical Engineering and Computer Science Junior at Duke University who enjoys building and tinkering with the hardware and software of medical devices.
 
-        <div class="card">
-          <div class="card-content-exp">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.youlab.bio" target="_blank"><img alt="You Lab logo"
-                    src="/assets/img/youLabLogo.jpg" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <div class="role brown-text text-darken-2">Undergraduate Researcher</div>
-                <p>
-                  <span class="card-title"><a href="https://www.youlab.bio" target="_blank"
-                      class="teal-text hoverline">You Lab</a></span>
-                </p>
-              </div>
-            </div>
-            <ul>
-              <li>
-              Awarded Duke Undergraduate Research Assistantship Grant for $400 renewable every semester and invited to present at
-                  annual Duke Undergraduate Research Symposium
-              </li>
-              <li>
-                Created Support Vector Regression ML algorithm using scikit-learn to predict biosensor concentration based on cell
-                fluorescence output with algorithm achieving a R2 = 0.82 when predicted and real outputs compared
-              </li>
-              <li>
-                Designed PyTorch VAE Convolutional Neural Net and Multi-layer Perceptron biosensor concentration prediction model with overall R^2 of 0.99
-              </li>
-              <li>
-                  <b>Tools:</b> Python, MATLAB, scikit-learn, PyTorch
-                </li>
-                <!-- <li>
-                  <b>Laboratory Skills:</b> Cell/bacterial Culture, Microscopy, Spectroscopy, PCR, Gibson Assembly, Transformation, Gel Electrophoresis
-                </li> -->
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>January 2022 - January 2024 | Durham, NC</span>
-          </div>
-        </div>
+          I have obtained most of my hardware and software knowledge from my past projects including a wearable breathalyzer, an AI squat assist device, and a smart water coaster.
 
-        <div class="card">
-          <div class="card-content-exp">
-              <div class="row" style="cursor: pointer;"> <!-- Added cursor style for better UX -->
-                  <div class="col s12 m2">
-                      <a href="https://www.delsys.com/" target="_blank">
-                          <img alt="Delsys logo" src="/assets/img/delsysLogo.jpg" class="responsive-img center-block" />
-                      </a>
-                  </div>
-                  <div class="col s12 m10">
-                    <div class="role brown-text text-darken-2">R&D Intern</div>
-                      <p>
-                          <span class="card-title">
-                              <a href="https://www.delsys.com/" target="_blank" class="teal-text hoverline">Delsys</a>
-                          </span>
-                      </p>
-                  </div>
-              </div>
-              <ul>
-                12-week internship at wearable sensor medical device company specializing in electrical and software aspects of sEMGs
-                <li>
-                  Improved Python and MATLAB backend for muscle decomposition product by augmenting PyTorch/CUDA neural
-                  network and proprietary HPF and JSON files with C#/.NET to prepare next generation product for end of year release
-                </li>
-                <li>
-                  Generated and implemented Python thermal image processing algorithms to detect and analyze hand temperature and respiratory rate
-                  using MediaPipe API and Fast Fourier Transforms that led to successful demonstration and grant approval of prototype
-                </li>
-                <li>
-                  Validated prototype for a successful grant proposal by crafting transceiver-microcontroller circuit and data parsing
-                  algorithm to collect and process data from custom pulse oximeter
-                </li>
-                <li>
-                  <b>Tools:</b> Python, C, Microcontrollers, PyTorch, Tensorflow, MATLAB, C#
-                </li>
-              </ul>
-          </div>
-          <div class="card-action">
-              <span>May 2023 - August 2023 | Boston, MA</span>
-          </div>
-      </div>
-
-        
-        <div class="card">
-          <div class="card-content-exp">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://ece.duke.edu/faculty/james-morizio" target="_blank"><img alt="Morizio Lab logo"
-                    src="/assets/img/dukeLogo.jpg" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <div class="role brown-text text-darken-2">Undergraduate Researcher</div>
-                <p>
-                  <span class="card-title"><a href="https://ece.duke.edu/faculty/james-morizio" target="_blank"
-                      class="teal-text hoverline">Morizio Lab</a></span>
-                </p>
-              </div>
-            </div>
-            <ul>
-              <li>
-                Design novel capsules to house electronic sensors to analyze sheep brain and movement
-              </li>
-              <li>
-                Assemble and 3D print capsules made with biomaterials intended to suture to sheep muscle along with custom rubber gasket to seal the capsule
-              </li>
-              <li>
-                Perform vacuum leak tests on capsules to ensure electrical and mechanical functionality
-              </li>
-              <li>
-                <b>Tools:</b> OnShape, CAD
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>January 2023 - June 2023 | Durham, NC</span>
-          </div>
-        </div>
-  
+          In the future, I am interested in exploring innovative AI and engineering techniques to solve medical problems in the medical device industry and promoting accessibility to healthcare. 
+        </p>
+        <p>
+          <ul>
+            <li><b>Technical Skills:</b> Microcontrollers, Circuit Design (KiCad), PCB Layout, Soldering, OnShape, Fusion 360</li>
+            <li><b>Languages:</b> Python, C, Java, MATLAB, JavaScript, SQL, C#/.NET</li>
+            <li><b>Frameworks & Tools:</b> Git, TensorFlow, PyTorch, OpenCV</li>
+          </ul>
+          
+        </p>
       </div>
     </section>
 
-    <!-- Fifth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
-      <div class="container">
-        <!-- Languages and Databases -->
-        <div class="card">
-            <div class="card-content">
-              <h4 class="brown-text light">Technologies</h4>
-              <div class="row text-center">
-                <div class="col s4 m2">
-                  <img alt="" src="/assets/img/arduino-logo-1.png" class="responsive-img" />Microcontrollers
-                </div>
-                <div class="col s4 m2">
-                  <img alt="" src="/assets/img/kicadLogo.png" class="responsive-img" />Circuit Design
-                </div>
-                <div class="col s4 m2">
-                  <img alt="" src="/assets/img/pcb.jpg" class="responsive-img" />PCB Layout
-                </div>
-                <div class="col s4 m2">
-                  <img alt="" src="/assets/img/solder.jpg" class="responsive-img" />Soldering
-                </div>
-                <div class="col s4 m2">
-                  <img alt="" src="/assets/img/onshape.jpg" class="responsive-img" />OnShape
-                </div>
-                <div class="col s4 m2">
-                    <img alt="" src="/assets/img/fusionLogo.jpg" class="responsive-img" />Fusion360
-                </div>
-              </div>
-            </div>
-          </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Languages</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/C_logo.png" class="responsive-img" />C
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/java_log.png" class="responsive-img" />Java
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/Matlab_Logo.png" class="responsive-img" />MATLAB
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/javascript.png" class="responsive-img" />JavaScript
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />SQL
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Frameworks -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Software</h4>
-            <div class="row text-center">
-            <div class="col s4 m2">
-                <img alt="" src="/assets/img/git.png" class="responsive-img" />Git
-            </div>
-            <div class="col s4 m2">
-                <img alt="" src="/assets/img/tensorflow-logo-1.png" class="responsive-img" />Tensorflow
-            </div>
-            <div class="col s4 m2">
-                <img alt="" src="/assets/img/pytorch-logo.png" class="responsive-img" />PyTorch
-            </div>
-            <div class="col s4 m2">
-                <img alt="" src="/assets/img/opencv-logo-1-500x500.jpg" class="responsive-img" />OpenCV
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
-      <div class="container">
-        <div class="row">
-          <!-- Education -->
-          <div class="col s12 m6 l8">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.duke.edu/" target="_blank" class="teal-text hoverline"><b>Duke University</b></a></span>
-                </p>
-                <p class="brown-text">Durham, NC</p>
-                <p>
-                  <b>Degree: </b>Bachelors: Biomedical Engineering and Computer Science      
-                  <br>
-                  <b>BME Design Fellow: </b>Fellowship to promote medical device prototyping and innovation skills
-                  <br>
-                  <b>Certificate: </b>Innovation and Entrepreneurship
-                  <br>
-                  <b>GPA: </b>3.98/4.0
-                </p>
-
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Quantitative Physiology and Applied Statistics</li>
-                    <li>MedTech Prototyping Skills</li>
-                    <li>Medical Instrumentation</li>
-                    <li>Signal Processing</li>      
-                    <li>Data Structures and Advanced Algorithm Design</li>
-                    <li>Operating Systems</li>                                
-                  </ul>
-                  </p>
-
-                </ul>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Eight Section: Contact -->
+    <!-- Third Section: Contact -->
     <section id="contact" class="section scrollspy full-height">
       <h3 class="page-title white-text teal">Contact</h3>
       <div class="container">
         <p>
-          <a aria-label="Call Ryan" data-position="top" data-tooltip="Call Ryan"
+          <a aria-label="Call Brandon" data-position="top" data-tooltip="Call Brandon"
             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-              aria-label="Call Ryan">727-218-8411</a></a>
+              aria-label="Call Brandon">224-931-8916</a></a>
         </p>
         <p>
-          <a aria-label="Email Ryan" href="mailto:ryan.dcunha@duke.edu" target="_blank" data-position="top"
-            data-tooltip="Email Ryan" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Ryan" href="mailto:ryan.dcunha@duke.edu"
-              class="hoverline">ryan.dcunha@duke.edu</a></a>
+          <a aria-label="Email Brandon" href="mailto:brandon.lu@duke.edu" target="_blank" data-position="top"
+            data-tooltip="Email Brandon" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-envelope"></i><a aria-label="Email Brandon" href="mailto:brandon.lu@duke.edu"
+              class="hoverline">brandon.lu@duke.edu</a></a>
         </p>
         <p>
-          <a aria-label="View Ryan on GitHub" href="http://github.com/dcunhrya" target="_blank"
-            data-position="top" data-tooltip="View Ryan on GitHub"
+          <a aria-label="View Brandon on GitLab" href="https://gitlab.oit.duke.edu/bjl40" target="_blank"
+            data-position="top" data-tooltip="View Brandon on GitLab"
             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Ryan on Github" href="http://github.com/dcunhrya" class="hoverline"
-              target="_blank">github.com/dcunhrya</a></a>
+              aria-label="Brandon on GitLab" href="https://gitlab.oit.duke.edu/bjl40" class="hoverline"
+              target="_blank">https://gitlab.oit.duke.edu/bjl40</a></a>
         </p>
       </div>
     </section>
