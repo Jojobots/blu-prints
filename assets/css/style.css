@@ -613,9 +613,9 @@ a.hoverline:hover {
 }
 
 .gallery img {
-  width: 400px;
-  height: 300px;
-  margin-right: 10px;
+  width: auto; /* or a specific width */
+  height: 300px; /* maintain aspect ratio */
+  object-fit: contain;
 }
 
 .image-container1 {
