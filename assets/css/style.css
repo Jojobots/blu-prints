@@ -602,21 +602,7 @@ a.hoverline:hover {
   height: 85%; /* Use the full height of the container */
 }
 
-.gallery-container {
-  width: 100%;
-  overflow-x: auto;
-  white-space: nowrap; /* Prevents images from wrapping to a new line */
-}
 
-.gallery {
-  display: inline-block; /* Forces the gallery to stay in a single line */
-}
-
-.gallery img {
-  width: auto; /* or a specific width */
-  height: 300px; /* maintain aspect ratio */
-  object-fit: contain;
-}
 
 .image-container1 {
   display: flex;
@@ -816,4 +802,45 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+}
+
+/* Scrolling Gallery Info*/
+.gallery-container {
+  height: 600px;
+  overflow-x: auto;
+  white-space: nowrap; /* Keeps items in a single line for horizontal scrolling */
+  margin-top: 0;
+  padding-top: 0; /* Further adjustments based on your layout */
+}
+
+.gallery-title {
+  font-size: 18px; /* Adjust the size as needed */
+  font-weight: bold; /* Makes the title stand out */
+  color: #333; /* Adjust the color as needed */
+  margin-bottom: 16px; /* Reduces space between the title and the gallery, adjust as needed */
+  padding-left: 10px; /* Optional: Adds some padding if your design requires it */
+  text-transform: uppercase; /* Optional: Styles the title to be uppercase */
+  
+}
+.gallery {
+  margin-top: 0;
+  padding-top: 0; /* Further adjustments based on your layout */
+  display: inline-flex; /* Aligns with horizontal scrolling, allows inline but flex behavior */
+  flex-direction: row; /* Ensures items are laid out horizontally */
+  align-items: center; /* Centers items vertically */
+  height: 100%; /* Full height of the container */
+}
+
+.gallery img, .gallery .scrollingVideo {
+  margin-top: 0;
+  padding-top: 0; /* Further adjustments based on your layout */
+  max-height: 500px; /* Limits image and video height, maintaining aspect ratio */
+  object-fit: contain; /* Ensures content is scaled properly within constraints */
+  margin-right: 10px; /* Adds spacing between gallery items */
+}
+
+.captionScroll {
+  font-size: 14px; /* Adjust caption size as needed */
+  color: #666; /* Caption text color */
+  max-width: 100%; /* Ensures the caption does not exceed the item width */
 }
