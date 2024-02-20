@@ -806,7 +806,7 @@ small {
 
 /* Scrolling Gallery Info*/
 .gallery-container {
-  height: 600px;
+  height: auto;
   overflow-x: auto;
   white-space: nowrap; /* Keeps items in a single line for horizontal scrolling */
   margin-top: 0;
@@ -835,6 +835,9 @@ small {
   margin-top: 0;
   padding-top: 0; /* Further adjustments based on your layout */
   max-height: 500px; /* Limits image and video height, maintaining aspect ratio */
+  max-width: 500px; /* Limits width to 500px */
+  height: auto; /* Scales height automatically to maintain aspect ratio */
+  width: auto; /* Scales width automatically to maintain aspect ratio */
   object-fit: contain; /* Ensures content is scaled properly within constraints */
   margin-right: 10px; /* Adds spacing between gallery items */
 }
