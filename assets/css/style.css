@@ -19,6 +19,24 @@
   width: 100%;
   height: auto;
 }
+.card-content {
+  display: flex; /* Enables Flexbox */
+  flex-wrap: wrap; /* Allows items to wrap if needed, useful for responsive design */
+}
+
+.card-body {
+  flex: 1; /* Allows the text container to grow and fill the space, adjust as necessary */
+}
+
+.right-content {
+  flex-basis: 50%; /* Sets the base size of the right content to 50% of the container's size */
+  /* Remove the float property, it's not needed with Flexbox */
+}
+.right-content iframe {
+  width: 100%; /* Makes the iframe responsive within the .right-content */
+  height: 500px; /* Adjust height as needed */
+  border: none; /* Removes border */
+}
 
 .card-content-exp > *:not(.row) {
   display: none;
