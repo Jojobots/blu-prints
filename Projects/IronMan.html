@@ -163,6 +163,7 @@
                   <p>
                     <span class="card-title"><a target="_blank" class="teal-text hoverline"><b>Final Report</b></a></span>
                   </p>
+                  
                   <ul>
                     <p>
                     <ul>
@@ -278,14 +279,15 @@
               <div class="card">
                 <div class="card-content">
                   <p>
-                    <span class="card-title"><a target="_blank" class="teal-text hoverline"><b>EMG Filtering & Sampling</b></a></span>
+                    <span class="card-title"><a target="_blank" class="teal-text hoverline"><b>EMG Filtering & Amplification</b></a></span>
                   </p>
                   <p>
-                    4 QTI sensors were integrated to the robot, and a traditional line follow program was tuned. The line 
-                    follow code is programmed to accomodating sharp turns, pause at intersections of lines,
-                    and search for nearby lines if lost. In the image gallery you'll find the circuit
-                    schematic for the line follow program. In addition, a QTI sensor was used to detect 
-                    the presence of a shiny mirror surface.
+                    Before the EMG signal reaches the microcontroller, EMG signals were first pre-processed via an analog circuit that filters 
+                    and amplifies our desired signal. Based off literature values and our empirical testing, we found that the majority of
+                    EMG frequencies fall between 0.5 Hz and 500 Hz. Our analog circuit first takes the differential measurement between two 
+                    surface electrodes, which is then processed through a 60Hz notch filter to remove power artifacts.
+                    The signal is then passed into a bandpass filter to eliminate noise and motion artifacts, before being amplified to have 
+                    a pk-pk of around 2 V and an offset of 1.5V
                 </p>
                 </div>
               </div>
@@ -294,12 +296,14 @@
               <div class="card">
                 <div class="card-content">
                   <p>
-                    <span class="card-title"><a target="_blank" class="teal-text hoverline"><b>Motion Algorithm</b></a></span>
+                    <span class="card-title"><a target="_blank" class="teal-text hoverline"><b>Firmware</b></a></span>
                   </p>
                   <p>
-                    An RGB sensor mounted to the side of the robot was used to identify what color the robot was on. 
-                    Code for the RGB sensor consisted of if statements to flash the RGB LED a certain color 
-                    based on a color ratio from the sensor that was experimentally determined
+                    An NRF52833 chip was used to process the EMG signal. A SAADC channel was multithreaded to sample our signal at 5 kHz,
+                    where a continuous absolute integral is taken to approximate the EMG strength. Based on a callibration protocol
+                    that begins at the initiation of the firmware, this value is then linearly mapped to a desired motor position.
+                    PWM is then used to control the servo motor, but if necessary, an PID loop will be employed should we switch to using
+                    a DC motor. 
                   </p>
                 </div>
               </div>
@@ -313,9 +317,10 @@
                     <span class="card-title"><a target="_blank" class="teal-text hoverline"><b>Hardware Design</b></a></span>
                   </p>
                   <p>
-                    An X-Bee module was utilized to enable bluetooth communication between nearby robots.
-                    Both sending and receiving data was implemented across the bluetooth protocol, and used
-                    to evaluate the status of nearby robots. 
+                    All hardware was designed on Fusion360 and printed using a combination of PLA, TPU, and PETG, depending on the demands
+                    of the part. Finite element analysis was used to predict strength of materials, and experimental testing was performed
+                    as well to take into account the anisotropic properties of 3D printing. A mix of M3 and M4 metal screws, bolts, and washers
+                    were used to join parts.
                   </p>
                 </div>
               </div>
@@ -327,9 +332,7 @@
                     <span class="card-title"><a target="_blank" class="teal-text hoverline"><b>User Testing & Future Goals</b></a></span>
                   </p>
                   <p>
-                    An LCD was used to display whether the object observed was either metal or plastic and communicate with other robots. 
-                    The code for communication involved bit shifting and continuously update once every robot sent out their signal.
-                    The code for the LCD involved displaying the information on a scrolling display
+                    User testing will proceed as outlined in our design criteria! Stay tuned.
                   </p>
                 </div>
               </div>

@@ -166,8 +166,10 @@
                   <span class="card-title"><a target="_blank" class="teal-text hoverline"><b>Filtering & Analog Signal Processing</b></a></span>
                 </p>
                 <p>
-                  A Double Reverse Four Bar (DR4B) was used to as our primary lift mechanism for any vertical motion needed. Taking advantage of stacking four bars, a DR4B
-                  offers the advantage of being both fast, and keeps loads parallel to the floor.
+                  ECG signals were preprocessed using instrumentation amplifiers and op amp filters. Through using an INA126 an LF353, in conjunction
+                  with several resistors and capacitors, we filtered our ECG signal between 0.2-100 Hz, based off literature and experimental values.
+                  The signal was also amplified by a factor of 200 to obtain an output voltage of roughly 1V. This project focused on filter 
+                  and op amp design.
               </p>
               </div>
             </div>
@@ -179,9 +181,9 @@
                   <span class="card-title"><a target="_blank" class="teal-text hoverline"><b>Frequency Domain Analysis</b></a></span>
                 </p>
                 <p>
-                  PID formed the basis of most control systems within the robot. Initially used to control the DR4B lift of the robot, PID was applied in the 2 DOF 
-                  auto-aiming linear punch to position the puncher. PID was finally applied in conjunction with odometry to allow for position based movement, where 
-                  a location in the XZ plane is specified, and the robot will travel to that position.
+                  Frequency domain analysis was used to determine both the efficiency of our filter, the sampling rate needed, and an ideal filter range.
+                  In house ADC software designed by Matt Brown sampled our signal at 2000 Hz, and was then processed through our own developed python script
+                  to determine cutoff frequencies. 
                 </p>
               </div>
             </div>
