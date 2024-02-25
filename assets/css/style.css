@@ -536,7 +536,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid #004d40 !important;
+  border-bottom: 3px solid #00004d !important;
 }
 
 #skills .card.large {
@@ -723,7 +723,7 @@ small {
     width: 100%;
   }
   nav {
-    background: #000000;
+    background: #001b96;
     height: 64px;
     position: absolute;
   }
